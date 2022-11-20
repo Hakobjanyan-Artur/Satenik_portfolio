@@ -1,0 +1,103 @@
+.navbar {
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px solid #424242;
+}
+.navbar .container nav {
+    display: flex;
+    align-items: flex-end;
+    height: 100px;
+    justify-content: space-around;
+}
+.navbar .container nav .other {
+    display: flex;
+    gap: 20%;
+    align-items: center;
+}
+.navbar .container nav .homeDiv {
+    font-size: 25px;
+}
+.navbar .container nav .actof {
+    color: #fff;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    position: relative;
+    transition: .3s;
+}
+.actof::before {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: rgb(225, 44, 214);
+    position: absolute;
+    bottom: 0;
+    transition: .3s;
+}
+.actof:hover::before{
+    width: 100%;
+}
+.act {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(225, 44, 214);
+    position: relative;
+    font-family: sans-serif;
+}
+.act::before {
+    content: '';
+    width: 100%;
+    height: 3px;
+    background: rgb(225, 44, 214);
+    position: absolute;
+    bottom: 0;
+    transition: .3s;
+}
+.burgerMenu{
+    color: #fff;
+    font-size: 20px;
+    transform: translateY(-20px);
+    display: none;
+}
+.sign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 40px;
+    transform: translateY(-20px);
+    background: rgb(225, 44, 214);
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    box-shadow: 0 0 15px #d54ac5;
+}
+
+
+@media (max-Width: 765px) {
+    .navbar .container nav .other{
+        display: none;
+    }
+    .hidden {
+            display: flex;
+            flex-direction: column;
+            width: 20%;
+            position: absolute;
+            top: 100px;
+            background: #111729;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+    }
+    .burgerMenu{
+        display: block;
+        cursor: pointer;
+    }
+    .sign {
+        display: none;
+    }
+}
