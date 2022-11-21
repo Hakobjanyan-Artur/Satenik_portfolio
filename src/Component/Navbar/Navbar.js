@@ -12,7 +12,7 @@ function Navbar() {
                 <div className="container">
                     <nav>
                         <div className='homeDiv'>
-                            <NavLink className={({isActive}) => isActive ? 'act' : 'actof'} to="/" end>S. Amaryan</NavLink>
+                            <NavLink className={({isActive}) => isActive ? 'act' : 'actof'} to="/" end><span className='amaryan'>S. Amaryan</span></NavLink>
                         </div>
                         <div ref={otRef} className='other'>
                             <NavLink className={({isActive}) => isActive ? 'act' : 'actof'} to="/works">Works</NavLink>

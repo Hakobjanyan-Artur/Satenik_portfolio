@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'Dancing';
+    src: url('../../fonts/DancingScript-VariableFont_wght.ttf');
+}
 .navbar {
     width: 100%;
     height: 100px;
@@ -9,13 +13,26 @@
     height: 100px;
     justify-content: space-around;
 }
-.navbar .container nav .other {
+.other {
     display: flex;
     gap: 20%;
     align-items: center;
+    font-family: sans-serif;
 }
-.navbar .container nav .homeDiv {
+.homeDiv {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.amaryan {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 25px;
+    font-family: 'Dancing', sans-serif;
+    letter-spacing: 5px;
 }
 .navbar .container nav .actof {
     color: #fff;
@@ -23,7 +40,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: sans-serif;
     position: relative;
     transition: .3s;
 }
@@ -35,6 +51,7 @@
     position: absolute;
     bottom: 0;
     transition: .3s;
+    box-shadow: 0 0 20px #d54ac5;
 }
 .actof:hover::before{
     width: 100%;
@@ -46,7 +63,6 @@
     align-items: center;
     color: rgb(225, 44, 214);
     position: relative;
-    font-family: sans-serif;
 }
 .act::before {
     content: '';
@@ -56,6 +72,7 @@
     position: absolute;
     bottom: 0;
     transition: .3s;
+    box-shadow: 0 0 20px #d54ac5;
 }
 .burgerMenu{
     color: #fff;
@@ -79,8 +96,8 @@
 }
 
 
-@media (max-Width: 765px) {
-    .navbar .container nav .other{
+@media (max-Width: 800px) {
+    .other{
         display: none;
     }
     .hidden {
@@ -96,8 +113,5 @@
     .burgerMenu{
         display: block;
         cursor: pointer;
-    }
-    .sign {
-        display: none;
     }
 }

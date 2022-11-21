@@ -7,6 +7,7 @@ import Works from './Component/Works/Works';
 import Blog from './Component/Blog/Blog';
 import Contact from './Component/Contact/Contact';
 import Login from './Component/Login/Login';
+import Registration from './Component/Registration/Registration';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path='contact' element={<Contact />}/>
         </Route>
         <Route path='/login' element={<Login />} />
+        <Route path='/registration' element={< Registration /> }/>
       </Routes>
     </div>
   );

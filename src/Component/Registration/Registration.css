@@ -2,15 +2,15 @@
     font-family: 'Dancing';
     src: url('../../fonts/DancingScript-VariableFont_wght.ttf');
 }
-.login .container {
+.formik .container {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
 }
-.login .container form {
+.formik .container form {
     width: 400px;
-    height: 300px;
+    height: 550px;
     border-radius: 10px;
     box-shadow: 0 0 25px #d54ac5;
     display: flex;
@@ -19,13 +19,13 @@
     gap: 30px;
     padding-top: 20px;
 }
-.login .container form .title {
+.formik .container form .title {
     font-size: 30px;
     color: #fff;
     text-shadow: 0 0 20px #d54ac5;
     font-family: 'Dancing', sans-serif;
 }
-.login .container form input {
+.formik .container form input {
     width: 350px;
     height: 30px;
     background: none;
@@ -33,38 +33,18 @@
     border-bottom: 1px solid #424242;
     outline: none;
     padding-left: 20px;
-    font-size: 20px;
-    color: #fff;
-    overflow: hidden;
-}
-.login .container form input::placeholder {
-    color: #424242;
     font-size: 18px;
+    color: #fff;
+}
+.formik .container form input::placeholder {
+    color: #424242;
     transition: .3s;
 }
-.login .container form input:focus::placeholder{
+.formik .container form input:focus::placeholder {
     transform: translateY(-30px);
     color: #fff;
 }
-.login .container form .submit {
-    width: 350px;
-    height: 40px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.login .container form .submit span {
-    color: #fff;
-    font-size: 18px;
-    font-family: 'Dancing', sans-serif;
-    cursor: pointer;
-    transition: .4s;
-}
-.login .container form .submit span:hover {
-    color: rgb(225, 44, 214);;
-    text-shadow: 0 0 10px #d54ac5;
-}
-.login .container form button {
+.formik .container form button {
     width: 150px;
     height: 30px;
     border-radius: 10px;
@@ -74,19 +54,35 @@
     color: #fff;
     cursor: pointer;
     box-shadow: 0 0 15px #d54ac5;
+    margin-top: 50px;
+}
+.formik .container form .error {
+    color: rgb(241, 19, 19);
+}
+.formik .container form .signIn {
+    font-size: 20px;
+    color: #fff;
+    margin-top: 20px;
+    transform: translateX(120px);
+    font-family: 'Dancing', sans-serif;
+    cursor: pointer;
+    transition: .3s;
+}
+.formik .container form .signIn:hover {
+    color: rgb(225, 44, 214);
+    text-shadow: 0 0 10px #d54ac5;
 }
 @media (max-width: 420px) {
-    .login .container form {
+    .formik .container form {
         width: 250px;
     }
-    .login .container form input {
+    .formik .container form input {
         width: 150px;
     }
-    .login .container form button {
+    .formik .container form button {
         width: 80px;
         font-size: 14px;
-    }
-    .login .container form .submit {
-        width: 250px;
+    }.formik .container form .signIn {
+        transform: translateX(0);
     }
 }
